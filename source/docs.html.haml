@@ -1,13 +1,94 @@
 ---
 title: Documentation
 ---
+%link{:href => "css/documentation.css", :rel => "stylesheet"}/
 
-%p
-  This is the application you should build:
 
-%p
-  %img{src: 'img/Test-overview.png'}
+.documentation
+  %img.top{src: 'https://s3.amazonaws.com/optoro-corp/logo_white_150.gif'}
 
-%p 
-  All the assets (pre-cut) are in
-  %code< img
+  %h2 Overview
+
+  %p
+    Your task is to build this game:
+
+  %p
+    %img{src: 'img/Test-overview.jpg', width: 404}
+
+  %p 
+    All the assets (pre-cut) are in 
+    %code< img
+    , please place your working app in
+    %a{href: 'app.html'} app.html
+    \.
+
+  %p
+    If you want to leverage 
+    %a{href: 'http://haml.info/'}< haml
+    ,
+    %a{href: 'http://sass-lang.com/'}< sass
+    , and
+    %a{href: 'http://coffeescript.org/'}< coffeescript
+    , this project is set up for 
+    %a{href: 'http://middlemanapp.com/'}< Middleman
+    \. Read about it at
+    %a{href: 'http://middlemanapp.com/getting-started/'} their website
+    and edit the files in 
+    %code< source
+    \.
+
+  %p
+    Certainly feel free to complete this project using vanilla html,
+    css, and javascript. If you want to take that approach, edit the
+    files in 
+    %code< build
+    \.
+
+  %h2 Puzzle
+
+  %p
+    The puzzle you're building is a simple logic puzzle. You have to fill
+    in the squares to coorespond with the hints along the top and down the
+    side.
+  %p
+    The hints tell you how many squares in that row or column should
+    be filled in. For example in the sample image along the top the first
+    number is '1', which indicates that there is one square filled in in
+    that column. Similarly the bottom number along the left is '2', which
+    indicates that there are two squares filled in in that row (they don't
+    have to touch).
+
+  %h2 Interactions
+
+  %ul
+    %li Clicking on a tile should toggle that tile on and off
+    %li 
+      Clicking on "New Puzzle" should query the server for a new puzzle
+      and set it up. It should clear out any existing tile selections
+    %li<
+      Clicking on "Check Solution" should transmit the solution back to
+      the server to see if it's valid
+      %ul<
+        %li<
+          Extra credit for checking in the browser first and then
+          transmitting to the server!
+
+  %h2 Tests
+
+  %p
+    There are
+    %a{href: 'http://pivotal.github.io/jasmine/'} jasmine
+    specs in
+    %a{href: 'spec.html'} spec.html
+    that you need to make pass.
+    They should give you some idea of what code you need to write as well.
+
+  %h2 Trouble
+
+  %p
+    If you run into any trouble, please
+    %a{href: 'mailto:jszmajda@optoro.com'} email me
+    and ask me for help.
+
+  %p
+    Thanks for giving this a shot, good luck!

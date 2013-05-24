@@ -1,6 +1,6 @@
-Welcome!
+# Welcome!
 
-# Setup
+## Setup
 
 This project is set up to use Middleman, a ruby-based static site
 builder. Feel free to solve the project using the static html,
@@ -10,7 +10,7 @@ Middleman.
 
 More information on Middleman is available at http://middlemanapp.com/
 
-# The Task
+## The Task
 
 The challenge is to build a puzzle-playing app using html, css, and
 javascript. A full description of the application is available in the
