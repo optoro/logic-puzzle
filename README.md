@@ -1,5 +1,7 @@
 # Welcome!
 
+Please don't fork this project, don't give away the solution!
+
 ## Setup
 
 This project is set up to use Middleman, a ruby-based static site
