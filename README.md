@@ -14,4 +14,4 @@ More information on Middleman is available at http://middlemanapp.com/
 
 The challenge is to build a puzzle-playing app using html, css, and
 javascript. A full description of the application is available in the
-*docs.html* file. 
+**docs.html** file. 
