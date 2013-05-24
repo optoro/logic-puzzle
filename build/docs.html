@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Documentation</title>
+    <meta content='' name='description'>
+    <meta content='width=device-width' name='viewport'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href='css/app.css' rel='stylesheet'>
+    <script src='js/vendor/modernizr-2.6.1.min.js'></script>
+  </head>
+  <body>
+    <link href='css/documentation.css' rel='stylesheet'>
+    <div class='documentation'>
+      <img class='top' src='https://s3.amazonaws.com/optoro-corp/logo_white_150.gif'>
+      <h2>Overview</h2>
+      <p>
+        Your task is to build this game:
+      </p>
+      <p>
+        <img src='img/Test-overview.jpg' width='404'>
+      </p>
+      <p>
+        All the assets (pre-cut) are in
+        <code>img</code>
+        , please place your working app in
+        <a href='app.html'>app.html</a>
+        .
+      </p>
+      <p>
+        If you want to leverage
+        <a href='http://haml.info/'>haml</a>
+        ,
+        <a href='http://sass-lang.com/'>sass</a>
+        , and
+        <a href='http://coffeescript.org/'>coffeescript</a>
+        , this project is set up for
+        <a href='http://middlemanapp.com/'>Middleman</a>
+        . Read about it at
+        <a href='http://middlemanapp.com/getting-started/'>their website</a>
+        and edit the files in
+        <code>source</code>
+        .
+      </p>
+      <p>
+        Certainly feel free to complete this project using vanilla html,
+        css, and javascript. If you want to take that approach, edit the
+        files in
+        <code>build</code>
+        .
+      </p>
+      <h2>Puzzle</h2>
+      <p>
+        The puzzle you're building is a simple logic puzzle. You have to fill
+        in the squares to coorespond with the hints along the top and down the
+        side.
+      </p>
+      <p>
+        The hints tell you how many squares in that row or column should
+        be filled in. For example in the sample image along the top the first
+        number is '1', which indicates that there is one square filled in in
+        that column. Similarly the bottom number along the left is '2', which
+        indicates that there are two squares filled in in that row (they don't
+        have to touch).
+      </p>
+      <h2>Interactions</h2>
+      <ul>
+        <li>Clicking on a tile should toggle that tile on and off</li>
+        <li>
+          Clicking on "New Puzzle" should query the server for a new puzzle
+          and set it up. It should clear out any existing tile selections
+        </li>
+        <li>Clicking on "Check Solution" should transmit the solution back to
+        the server to see if it's valid
+        <ul><li>Extra credit for checking in the browser first and then
+        transmitting to the server!</li></ul></li>
+      </ul>
+      <h2>Tests</h2>
+      <p>
+        There are
+        <a href='http://pivotal.github.io/jasmine/'>jasmine</a>
+        specs in
+        <a href='spec.html'>spec.html</a>
+        that you need to make pass.
+        They should give you some idea of what code you need to write as well.
+      </p>
+      <h2>Trouble</h2>
+      <p>
+        If you run into any trouble, please
+        <a href='mailto:jszmajda@optoro.com'>email me</a>
+        and ask me for help.
+      </p>
+      <p>
+        Thanks for giving this a shot, good luck!
+      </p>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')
+    </script>
+    <script src='js/application.js'></script>
+  </body>
+</html>

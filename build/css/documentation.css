@@ -1,0 +1,17 @@
+/* line 3, /home/josh/src/logic-puzzle/source/css/documentation.sass */
+.documentation {
+  max-width: 800px;
+  background-color: white;
+  border: 5px solid #dddddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px; }
+  /* line 11, /home/josh/src/logic-puzzle/source/css/documentation.sass */
+  .documentation img.top {
+    float: right; }
+  /* line 14, /home/josh/src/logic-puzzle/source/css/documentation.sass */
+  .documentation h2 {
+    border-bottom: 1px solid #dddddd; }
+  /* line 17, /home/josh/src/logic-puzzle/source/css/documentation.sass */
+  .documentation ul {
+    margin-top: 0; }
