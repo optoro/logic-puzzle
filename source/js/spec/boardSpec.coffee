@@ -32,6 +32,22 @@ describe "Board", ->
         row_hints: [3,1,3],
         col_hints: [2,1,3,1]
       }
+
+      # Solution is a serialized representation of the board, its format is:
+      # number of rows, number of columns, (a 1 or 0 for each tile in the
+      # board, left-to-right, top-to-bottom).
+      #
+      # For example, a board like
+      # +---+---+
+      # | X | O |
+      # +---+---+
+      # | O | X |
+      # +---+---+
+      # (where Xs are filled tiles)
+      #
+      # would serialize to:
+      # '2,2,1,0,0,1'
+
       @solution = '3,4,1,1,1,0,0,0,1,0,1,0,1,1'
       spyOn(@board, 'makeSolutionString').andReturn(@solution)
       spyOn($, 'post')
